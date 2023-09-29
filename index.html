@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=Inter:wght@600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+   
+   <div class="container">
+    
+    <h1>Calculadora</h1>
+    <p class="visor"></p>
+
+    <div class="conteudo">
+        
+        
+        <input onclick="limparValor()" type="button" value="C" style="width: 65px;">
+        <input class="delet"  type="button" value="<" style="width: 65px;">
+        <input onclick="inserirValor('/')" type="button" value="/" style="width: 65px;">
+        <input onclick="inserirValor('*')"  type="button" value="*" style="width: 65px;" >
+
+    </div>
+
+    <div class="conteudo">
+        <input onclick="inserirValor('7')" type="button" value="7" style="width: 65px; " >
+        <input onclick="inserirValor('8')" type="button" value="8" style="width: 65px;">
+        <input onclick="inserirValor('9')" type="button" value="9" style="width: 65px;">
+        <input onclick="inserirValor('-')" type="button" value="-" style="width: 65px; " >
+        
+
+    </div>
+
+    <div class="conteudo">
+        <input onclick="inserirValor('4')" type="button" value="4" style="width: 65px;">
+        <input onclick="inserirValor('5')" type="button" value="5" style="width: 65px;">
+        <input onclick="inserirValor('6')" type="button" value="6" style="width: 65px;">
+        <input onclick="inserirValor('+')" type="button" value="+" style="width: 65px; ">
+        
+
+    </div>
+
+    <div class="conteudo">
+        <input onclick="inserirValor('1')" type="button" value="1" style="width: 65px;">
+        <input onclick="inserirValor('2')" type="button" value="2" style="width: 65px;">
+        <input onclick="inserirValor('3')" type="button" value="3" style="width: 65px;">
+        <input onclick="inserirValor('%')" type="button" value="%" style="width: 65px;">
+        
+
+    </div>
+    <div class="conteudo">
+        <input onclick="inserirValor('0')" type="button" value="0" style="width: 65px; ">
+        <input onclick="inserirValor('.')" type="button" value="." style="width: 65px;">
+        <input onclick="inserirValor('**')" type="button" value="^" style="width: 65px;">
+        <input aria-colspan="2" onclick="resultado()"  type="button" value="=" style="width: 65px; ;  ">
+        
+
+    </div>
+
+   </div>
+
+   <script src="main.js"></script>
+
+
+    
+</body>
+</html>
